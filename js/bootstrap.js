@@ -27,9 +27,9 @@ if (typeof jQuery === 'undefined') {
 
 // TEST VIDEO
  //jQuery is required to run this code
- $( window ).load(function() {
-           $( '.video-element' ).get(0).play();
-  });
+ // $( window ).load(function() {
+ //           $( '.video-element' ).get(0).play();
+ //  });
 
  $( document ).ready(function() {
 
@@ -38,8 +38,6 @@ if (typeof jQuery === 'undefined') {
      initBannerVideoSize('.video-container .poster img');
      initBannerVideoSize('.video-container .filter');
      initBannerVideoSize('.video-container video');
-
-     $( '.video-element' ).get(0).play();
 
      $(window).on('resize', function() {
          scaleVideoContainer();
