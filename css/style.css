@@ -3473,11 +3473,8 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 .simple-box {
   height: 100%;
   width: 100%;
-  background: #000;
-  opacity: 0.5
   font-size: 24px;
   font-style: oblique;
-  color: #FFF;
   text-align: center;
   padding: 0px;
   margin: 0px;
