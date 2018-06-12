@@ -2818,7 +2818,7 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 
 .slider-text-middle-main {display: table; height: 100%; width: 100% }
 .slider-text-middle {display: table-cell; vertical-align: middle; }
-.slider-typography {width: 100%; height: 100%; position: absolute; right: 0; left: 0; }
+.slider-typography {width: 100%; height: 100%; position: absolute; right: 0; left: 0;}
 .slider-text-bottom {display: table-cell; vertical-align: bottom;}
 .slider-text-top {display: table-cell; vertical-align: top;}
 .down-section {position: absolute; width: 100%; bottom:50px; left: 0; right: 0}
@@ -3468,6 +3468,24 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 /* testimonial-box */
 .testimonial-box .image-box {display: table-cell; vertical-align: middle}
 .testimonial-box .name-box {display: table-cell; vertical-align: middle}
+
+/* simple-center-box */
+.simple-box {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  font-size: 24px;
+  font-style: oblique;
+  color: #FFF;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
 
 /* ===================================
    Blog
