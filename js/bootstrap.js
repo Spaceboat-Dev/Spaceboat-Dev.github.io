@@ -27,6 +27,10 @@ if (typeof jQuery === 'undefined') {
 
 // TEST VIDEO
  //jQuery is required to run this code
+ $( window ).load(function() {
+           $( '.video-element' ).get(0).play();
+  });
+
  $( document ).ready(function() {
 
      scaleVideoContainer();
