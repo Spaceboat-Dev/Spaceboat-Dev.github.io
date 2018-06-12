@@ -40,12 +40,13 @@ Table of contents
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic:100,200,300,400,500,600,700,800,900');
 
 /* ===================================
     Reset
 ====================================== */
 
-body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
+body{ font-family: 'Didact Gothic', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
 body, html { height: 100%; -moz-osx-font-smoothing: grayscale;}
 a, a:active, a:focus { color: #6f6f6f; text-decoration: none; }
 a:hover, a:active{color: #ff214f; text-decoration: none;}
@@ -77,8 +78,8 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 ====================================== */
 
 /* font family */
-.alt-font {font-family: 'Montserrat', sans-serif; font-weight: 500}
-.main-font {font-family: 'Roboto', sans-serif;}
+.alt-font {font-family: 'Didact Gothic', sans-serif; font-weight: 500}
+.main-font {font-family: 'Didact Gothic', sans-serif;}
 
 /* heading */
 h1, h2, h3, h4, h5, h6 {margin:0 0 25px; padding:0; letter-spacing: 0; font-weight: 400;}
@@ -402,7 +403,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
     Button
 ====================================== */
 
-.btn {display:inline-block; border:2px solid transparent; letter-spacing: .5px; line-height: inherit; border-radius: 0; text-transform: uppercase; width: auto; font-family: 'Montserrat', sans-serif; font-weight: 600; transition-duration: 0.3s; transition-timing-function: ease-in-out}
+.btn {display:inline-block; border:2px solid transparent; letter-spacing: .5px; line-height: inherit; border-radius: 0; text-transform: uppercase; width: auto; font-family: 'Didact Gothic', sans-serif; font-weight: 600; transition-duration: 0.3s; transition-timing-function: ease-in-out}
 
 /* button size */
 .btn.btn-very-small {font-size:9px; padding: 1px 17px; line-height: 22px;}
@@ -414,6 +415,8 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .btn i {margin-left: 6px; vertical-align: middle; position: relative; top:-1px}
 
 /* button background */
+.btn.btn-bluegreen {background:#4BC4CB; border-color: #4BC4CB; color: #232323}
+.btn.btn-bluegreen:hover, .btn.btn-bluegreen:focus {background: transparent; color: #4BC4CB}
 .btn.btn-white {background:#ffffff; border-color: #ffffff; color: #232323}
 .btn.btn-white:hover, .btn.btn-white:focus {background: transparent; color: #fff}
 .btn.btn-black {background:#000000; border-color: #000000; color: #fff}
@@ -446,7 +449,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .btn.btn-rounded.btn-extra-large {padding: 12px 45px 13px;}
 
 /* image button */
-.image-button {width: 100%; background: rgba(0,0,0,0.80); padding: 26px; font-family: "Roboto", sans-serif; font-size: 16px;}
+.image-button {width: 100%; background: rgba(0,0,0,0.80); padding: 26px; font-family: "Didact Gothic", sans-serif; font-size: 16px;}
 .image-button:hover {background: rgba(0,0,0,0.5);}
 
 .tag-cloud a {font-size: 10px; padding: 3px 8px; border: 1px solid #d9d9d9; margin: 0 8px 8px 0; display: inline-block; text-transform: uppercase; color: #232323; line-height: 18px;}
@@ -2160,7 +2163,7 @@ footer .small-icon li {margin: 0 8px;}
 .mfp-arrow-right:before {border-left: none; content: "\e628"; font-size: 2em; font-family: 'themify'; color: #fff;}
 .mfp-arrow-left:before {border-right: none; content: "\e629"; font-size: 2em; font-family: 'themify'; color: #fff;}
 .mfp-bottom-bar {margin-top: -24px; font-size: 12px}
-.mfp-close {font-size: 36px; font-family: 'Montserrat', sans-serif; font-weight: 500}
+.mfp-close {font-size: 36px; font-family: 'Didact Gothic', sans-serif; font-weight: 500}
 
 @-webkit-keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1;}}
 @-moz-keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1;}}
@@ -3474,7 +3477,6 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
   height: 100%;
   width: 100%;
   font-size: 24px;
-  font-style: oblique;
   text-align: center;
   background-color: rgba(21, 0, 64, 0.4);
   padding: 0px;
@@ -3587,8 +3589,8 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 ====================================== */
 
 /* scroll to top */
-.scroll-top-arrow, .scroll-top-arrow:focus { color: #fff; background: #878787; line-height: 28px; display: none; height: 30px; width: 30px; padding: 0; position: fixed; right: 45px; text-align: center; text-decoration: none; top: 91%; z-index: 10006; border-radius: 100%;}
-.scroll-top-arrow:hover {background: #000; opacity: .8; color: #fff; border-color: #ff214f}
+.scroll-top-arrow, .scroll-top-arrow:focus { color: #48C4CB; background: #290040; line-height: 28px; display: none; height: 30px; width: 30px; padding: 0; position: fixed; right: 45px; text-align: center; text-decoration: none; top: 91%; z-index: 10006; border-radius: 100%;}
+.scroll-top-arrow:hover { color: #48C4CB; background: #A02864; opacity: .8; border-color: #4BC4CB}
 .scroll-top-arrow i {line-height: 30px;  position: relative;}
 
 .bg-dark-footer{background-color:#141414;}
