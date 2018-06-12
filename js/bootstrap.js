@@ -39,6 +39,8 @@ if (typeof jQuery === 'undefined') {
      initBannerVideoSize('.video-container .filter');
      initBannerVideoSize('.video-container video');
 
+     $( '.video-element' ).get(0).play();
+
      $(window).on('resize', function() {
          scaleVideoContainer();
          scaleBannerVideoSize('.video-container .poster img');
