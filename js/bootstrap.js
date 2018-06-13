@@ -89,15 +89,10 @@ if (typeof jQuery === 'undefined') {
              $(this).width(videoWidth).height(videoHeight);
          }
 
-         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+         $('.homepage-hero-module .video-container video').addClass('expandIn animated');
 
      });
  }
-
-
-
-
-
 
 +function ($) {
   'use strict';
@@ -601,6 +596,7 @@ if (typeof jQuery === 'undefined') {
     .on('click.bs.carousel.data-api', '[data-slide-to]', clickHandler)
 
   $(window).on('load', function () {
+
     $('[data-ride="carousel"]').each(function () {
       var $carousel = $(this)
       Plugin.call($carousel, $carousel.data())
