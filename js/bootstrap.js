@@ -89,7 +89,7 @@ if (typeof jQuery === 'undefined') {
              $(this).width(videoWidth).height(videoHeight);
          }
 
-         $('.homepage-hero-module .video-container video').addClass('expandIn animated');
+         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
 
      });
  }
