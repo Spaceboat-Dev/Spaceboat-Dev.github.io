@@ -1356,7 +1356,7 @@ $(document).ready(function () {
         if (error) {
             $.ajax({
                 type: "POST",
-                url: "email-templates/contact.php",
+                url: "https://bwniplc7wf.execute-api.us-east-1.amazonaws.com/dev/sleepdoc-contact",//"email-templates/contact.php",
                 data: $("#contact-form").serialize(),
                 success: function (result) {
                     // Un-comment below code to redirect user to thank you page.
@@ -1365,9 +1365,20 @@ $(document).ready(function () {
                     $('input[type=text],textarea').each(function () {
                         $(this).val('');
                     })
-                    $("#success-contact-form").html(result);
+                    $("#success-contact-form").html("Your Email Has Sent!");
                     $("#success-contact-form").fadeIn("slow");
                     $('#success-contact-form').delay(4000).fadeOut("slow");
+                },
+                error: function (result) {
+
+                  window.location.href="thank-you.html";
+
+                  // $('input[type=text],textarea').each(function () {
+                  //     $(this).val('');
+                  // })
+                  // $("#success-contact-form").html("Your Email Has Sent!");
+                  // $("#success-contact-form").fadeIn("slow");
+                  // $('#success-contact-form').delay(4000).fadeOut("slow");
                 }
             });
         }
