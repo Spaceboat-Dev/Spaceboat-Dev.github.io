@@ -1,14 +1,14 @@
 
-<?php 
+<?php
   if(isset($_POST['email'])){
-	  
+
 	$name =$_POST["name"];
 	$from =$_POST["email"];
 	$subject=$_POST["subject"];
 	$comment=$_POST["comment"];
-	
+
 	// Email Receiver Address
-	$receiver="info@yourdomain.com";
+	$receiver="steve@spaceboat.space";
 	$subject="Contact form details";
 
 	$message = "
@@ -50,13 +50,13 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 $headers .= 'From: <'.$from.'>' . "\r\n";
-   if(mail($receiver,$subject,$message,$headers))  
+   if(mail($receiver,$subject,$message,$headers))
    {
 	   //Success Message
       echo "The message has been sent!";
    }
    else
-   {	
+   {
    	 //Fail Message
       echo "The message could not been sent!";
    }

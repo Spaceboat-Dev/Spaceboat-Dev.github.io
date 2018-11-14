@@ -1356,7 +1356,7 @@ $(document).ready(function () {
         if (error) {
             $.ajax({
                 type: "POST",
-                url: "email-templates/contact.php",
+                url: "https://bwniplc7wf.execute-api.us-east-1.amazonaws.com/dev/sleepdoc-contact",//"email-templates/contact.php",
                 data: $("#contact-form").serialize(),
                 success: function (result) {
                     // Un-comment below code to redirect user to thank you page.
