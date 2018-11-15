@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/animate.css" />
         <!-- bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <!-- et line icon -->
+        <!-- et line icon --> 
         <link rel="stylesheet" href="css/et-line-icons.css" />
         <!-- font-awesome icon -->
         <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -46,25 +46,27 @@
             <script src="js/html5shiv.js"></script>
         <![endif]-->
     </head>
-    <body class="bg-background-fade">
+    <body>
         <!-- start header -->
         <header>
             <!-- start navigation -->
-            <nav class="navbar navbar-default bootsnav nav-top-scroll bg-transparent nav-box-width white-link padding-four-lr menu-logo-center">
+            <nav class="navbar navbar-default bootsnav bg-white nav-box-width">
                 <div class="container nav-header-container">
                     <div class="row">
-                        <div class="center-logo">
-                            <a href="index.html" title="Spaceboat" class="logo"><img src="images/sb-logo-dark.png" data-at2x="images/sb-logo-dark@2x.png" class="logo-dark" alt="Spaceboat"><img src="images/sb-logo-dark.png" data-at2x="images/sb-logo-dark@2x.png" alt="Pofo" class="logo-light default"></a>
+                        <!-- start logo -->
+                        <div class="col-md-2 col-xs-5">
+                            <a href="index.html" title="Pofo" class="logo"><img src="images/logo.png" data-at2x="images/logo@2x.png" class="logo-dark default" alt="Pofo"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo" class="logo-light"></a>
                         </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 accordion-menu">
+                        <!-- end logo -->  
+                        <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right">
                             <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navbar-collapse-toggle-1">
                                 <span class="sr-only">toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <div class="navbar-collapse collapse no-padding-right" id="navbar-collapse-toggle-1">
-                                <ul class="nav navbar-nav navbar-left text-right no-margin alt-font text-normal width-40 sm-width-100 sm-text-left" data-in="fadeIn" data-out="fadeOut">
+                            <div class="navbar-collapse collapse pull-right" id="navbar-collapse-toggle-1">
+                                <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal" data-in="fadeIn" data-out="fadeOut">
                                     <!-- start menu item -->
                                     <li class="dropdown megamenu-fw">
                                         <a href="javascript:void(0);">Home</a><i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
@@ -295,8 +297,6 @@
                                             <!-- end sub menu -->
                                         </div>
                                     </li>
-                                </ul>
-                                <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal width-40 sm-width-100" data-in="fadeIn" data-out="fadeOut">
                                     <li class="dropdown simple-dropdown"><a href="javascript:void(0);" title="Blog">Blog</a><i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                         <!-- start sub menu -->
                                         <ul class="dropdown-menu" role="menu">
@@ -564,82 +564,239 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- end navigation -->
-        </header>
-        <!-- end header -->
-        <!-- start hero section -->
-        <section class="wow fadeIn no-padding cover-background color-code" data-color="7"  style="background-image: url('images/BG-6.png');">
-            <div class="container full-screen position-relative">
-                <div class="slider-typography text-left">
-                    <div class="slider-text-middle-main">
-                        <div class="slider-text-middle">
-                            <div class="col-lg-7 col-md-10 col-sm-10 center-col text-center">
-                                <span class="after-before-separator text-extra-small alt-font text-white letter-spacing-3 xs-letter-spacing-0 text-uppercase margin-20px-bottom xs-margin-5px-bottom display-inline-block">we work hard, we play hard</span>
-                                <h2 class="font-weight-600 text-white alt-font margin-40px-bottom xs-margin-25px-bottom">We combine design, thinking and technical</h2>
-                                <a href="portfolio-full-width-grid-transform.html" class="btn btn-transparent-white btn-rounded btn-medium text-link-white">Featured Works</a>
+                        <div class="col-md-2 col-xs-5 width-auto">
+                            <div class="header-searchbar">
+                                <a href="#search-header" class="header-search-form text-white"><i class="fa fa-search search-button"></i></a>
+                                <!-- search input-->
+                                <form id="search-header" method="post" action="search-result.html" name="search-header" class="mfp-hide search-form-result">
+                                    <div class="search-form position-relative">
+                                        <button type="submit" class="fa fa-search close-search search-button"></button>
+                                        <input type="text" name="search" class="search-input" placeholder="Enter your keywords..." autocomplete="off">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="header-social-icon xs-display-none">
+                                <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="https://dribbble.com/" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>                          
                             </div>
                         </div>
                     </div>
                 </div>
+            </nav>
+            <!-- end navigation --> 
+        </header>
+        <!-- end header -->
+        <!-- start product banner section -->
+        <section class="no-padding cover-background one-fourth-screen top-space" style="background-image: url('http://placehold.it/1920x955');">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- end hero section -->
-        <!-- start section -->
-        <section class="wow fadeIn color-code md-no-background-img" data-color="5" style="background: url('images/back-image1.png') left bottom no-repeat,url('images/back-image2.png') right top no-repeat">
+        <!-- end product banner section -->
+        <!-- start product information section -->
+        <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12 center-col text-center xs-padding-15px-lr">
-                        <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">about branding agency</div>
-                        <h3 class="text-white alt-font width-95 sm-width-100 margin-70px-bottom sm-no-margin-bottom">Spaceboat.</h3>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center margin-100px-bottom sm-margin-50px-bottom xs-margin-30px-bottom">
+                        <h4 class="font-weight-300 text-extra-dark-gray margin-15px-bottom">Mammut Interactive Corporate Design</h4>
+                        <span class="text-deep-pink text-large border-bottom border-color-deep-pink font-weight-300">Branding Design &nbsp;+&nbsp;&nbsp; Magento Development &nbsp;+&nbsp;&nbsp; Mobile Website &nbsp;+&nbsp; eNewsletter</span>
                     </div>
+                    <div class="col-md-5 col-sm-12 col-xs-12 col-md-offset-1 line-height-28 last-paragraph-no-margin sm-margin-50px-bottom xs-margin-30px-bottom wow fadeIn">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 col-md-offset-1 line-height-26 wow fadeIn">
+                        <ul class="list-style-6 margin-twelve-left">
+                            <li class="margin-5px-bottom"><label class="width-30 display-inline-block">Client:</label>Jason Richardson</li>
+                            <li class="margin-5px-bottom"><label class="width-30 display-inline-block">Industry:</label>Adventure  /  Travel</li>
+                            <li class="margin-5px-bottom"><label class="width-30 display-inline-block">Services:</label>Design, Art Direction, Website</li>
+                            <li class="margin-5px-bottom"><label class="width-30 display-inline-block">Date:</label>January 16th, 2017</li>
+                            <li class="margin-5px-bottom"><label class="width-30 display-inline-block">Website:</label><a href="https://themeforest.net/user/themezaa/portfolio?ref=themezaa" target="_blank">www.mammutadventure.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end product information section -->
+        <!-- start product images section -->
+        <section class="bg-extra-dark-gray">
+            <div class="container-fluid padding-five-lr sm-padding-30px-lr">
+                <div class="row">
+                    <!-- start product item -->
+                    <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp">
+                        <img src="http://placehold.it/800x533" alt="brochure image" />
+                    </div>
+                    <!-- end product item -->
+                    <!-- start product item -->
+                    <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="http://placehold.it/800x533" alt="brochure image" />
+                    </div>
+                    <!-- end product item -->
+                    <!-- start product item -->
+                    <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="http://placehold.it/800x533" alt="brochure image" />
+                    </div>
+                    <!-- end product item -->
+                </div>
+            </div>
+        </section>
+        <!-- end product images section -->
+        <!-- start product quotes section -->
+        <section class="wow fadeIn no-padding-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="margin-eight-bottom sm-margin-50px-bottom xs-margin-20px-bottom pull-left">
+                        <div class="col-md-6 col-sm-12 col-xs-12 last-paragraph-no-margin sm-margin-30px-bottom wow fadeInUp">
+                            <h5 class="font-weight-300 text-extra-dark-gray">Holistic brand redesign focusing product design, interface design, studio photograph style, icon design, editorial design, web design & motion design.</h5>
+                            <p class="font-weight-300 text-medium text-medium-gray">- Paul Rand / Creative Director</p>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-xs-12 col-md-offset-1 wow fadeInUp"  data-wow-delay="0.2s">
+                            <p>Koordinaten bilden die Grundlage für Einsatz des Produktes ausgerichtete Corporate Design. Reale Daten wie zum Beispiel Wetterdaten, Geografische Flächen und Höhenmeter, werden in das Design in mit einbezogen. Die neu gestaltete Marke zeichnet sich sowohl durch userorientierte Einsatz. die in Grundlage für das Einsatz von des Produktes ausgerichtete Corporate Voin Design. in Reale Daten wie zum Beispiel Wetterdaten, Geog rafische Koordi naten und Höhenmeter, werden in das Design mit einbezogen. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center wow fadeInUp">
+                        <img src="http://placehold.it/1526x782" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end product quotes section -->
+        <!-- start section -->
+        <section class="wow fadeIn bg-extra-dark-gray no-padding-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="http://placehold.it/96x96" alt="logo mammut" class="margin-40px-bottom sm-margin-30px-bottom"/>
+                        <h6 class="font-weight-300 text-medium-gray width-65 center-col sm-width-80">A corporate design based on the idea of generating design with user data created through the usage of the brands products. Every user has his own identity and can individualize his own products based on this adventures with the brands products.</h6>
+                        <div class="height-600px position-relative margin-100px-top sm-margin-50px-tb wow fadeInUp sm-height-auto"><img src="http://placehold.it/1312x792" alt="responsive priview"/></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wow fadeIn big-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center wow zoomIn"><img src="http://placehold.it/1633x549" alt=""/></div>
                 </div>
             </div>
         </section>
         <!-- end section -->
-        <!-- start portfolio section -->
-        <section class="wow fadeIn color-code no-padding xs-padding-50px-tb" data-color="3">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-9 col-sm-10 col-xs-12 center-col text-center">
-                        <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">Selected Works</div>
-                    </div>
+        <!-- start product gallery section -->
+        <section class="wow fadeIn no-padding">
+            <div class="container-fluid no-padding">
+                <div class="row no-margin">
+                    <ul class="portfolio-grid work-4col hover-option4 lightbox-gallery">
+                        <li class="grid-sizer"></li>
+                        <!-- start portfolio item -->
+                        <li class="grid-item web branding design wow fadeInUp">
+                            <a href="http://placehold.it/750x750" title="Armchair Mojo">
+                                <figure>
+                                    <div class="portfolio-img bg-extra-dark-gray"><img src="http://placehold.it/750x750" alt="" class="project-img-gallery"/></div>
+                                    <figcaption>
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box vertical-align-middle">
+                                                <div class="portfolio-hover-content position-relative">
+                                                    <i class="ti-zoom-in text-white fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <!-- end portfolio item -->
+                        <!-- start portfolio item -->
+                        <li class="grid-item web branding design wow fadeInUp" data-wow-delay="0.2s">
+                            <a href="http://placehold.it/750x750" title="Truenorth Web">
+                                <figure>
+                                    <div class="portfolio-img bg-extra-dark-gray"><img src="http://placehold.it/750x750" alt="" class="project-img-gallery"/></div>
+                                    <figcaption>
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box vertical-align-middle">
+                                                <div class="portfolio-hover-content position-relative">
+                                                    <i class="ti-zoom-in text-white fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <!-- end portfolio item -->
+                        <!-- start portfolio item -->
+                        <li class="grid-item wow fadeInUp" data-wow-delay="0.4s">
+                            <a href="http://placehold.it/750x750" title="Sean Cargo">
+                                <figure>
+                                    <div class="portfolio-img bg-extra-dark-gray"><img src="http://placehold.it/750x750" alt="" class="project-img-gallery"/></div>
+                                    <figcaption>
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box vertical-align-middle">
+                                                <div class="portfolio-hover-content position-relative">
+                                                    <i class="ti-zoom-in text-white fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <!-- end portfolio item -->
+                        <!-- start portfolio item -->
+                        <li class="grid-item wow fadeInUp" data-wow-delay="0.4s">
+                            <a href="http://placehold.it/750x750" title="Mass Productions">
+                                <figure>
+                                    <div class="portfolio-img bg-extra-dark-gray"><img src="http://placehold.it/750x750" alt="" class="project-img-gallery"/></div>
+                                    <figcaption>
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box vertical-align-middle">
+                                                <div class="portfolio-hover-content position-relative">
+                                                    <i class="ti-zoom-in text-white fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <!-- end portfolio item -->
+                    </ul>
                 </div>
+            </div>
+        </section>
+        <!-- end product gallery section -->
+        <!-- start product post section -->
+        <section class="wow fadeIn">
+            <div class="container">
                 <div class="row">
-                    <div class="filter-content overflow-hidden padding-100px-lr sm-no-padding-lr xs-padding-15px-lr">
-                        <ul class="portfolio-grid work-3col hover-option8 gutter-medium">
+                    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 center-col margin-eight-bottom text-center last-paragraph-no-margin">
+                        <h5 class="text-extra-dark-gray margin-20px-bottom font-weight-300">Related Projects</h5>
+                    </div>  
+                </div>
+                <div class="row no-margin">
+                    <div class="filter-content overflow-hidden">
+                        <ul class="portfolio-grid work-3col hover-option4 gutter-medium">
                             <li class="grid-sizer"></li>
                             <!-- start portfolio item -->
-                            <li class="grid-item web branding design wow fadeInUplast-paragraph-no-margin">
-                                <a href="single-project-page-01.html">
-                                    <figure>
-                                        <div class="portfolio-img"><img src="http://placehold.it/800x650" alt=""/></div>
-                                        <figcaption>
-                                            <div class="portfolio-hover-main">
-                                                <div class="portfolio-hover-box vertical-align-middle">
-                                                    <div class="portfolio-icon alt-font font-weight-600 icon-medium text-deep-pink">+</div>
-                                                    <span class="text-medium alt-font text-extra-dark-gray margin-5px-bottom">Tailoring Interior</span>
-                                                    <p class="text-small no-letter-spacing text-medium-gray">Branding and Brochure</p>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="grid-item web branding design wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
+                            <li class="grid-item web branding design wow fadeInUp">
                                 <a href="single-project-page-02.html">
                                     <figure>
-                                        <div class="portfolio-img"><img src="http://placehold.it/800x650" alt=""/></div>
+                                        <div class="portfolio-img bg-extra-dark-gray"><img src="http://placehold.it/800x650" alt=""/></div>
                                         <figcaption>
-                                            <div class="portfolio-hover-main">
+                                            <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box vertical-align-middle">
-                                                    <div class="portfolio-icon alt-font font-weight-600 icon-medium text-deep-pink">+</div>
-                                                    <span class="text-medium alt-font text-extra-dark-gray margin-5px-bottom">Love Fashion</span>
-                                                    <p class="text-small no-letter-spacing text-medium-gray">Branding and Brochure</p>
+                                                    <div class="portfolio-hover-content position-relative">
+                                                        <div class="bg-deep-pink center-col separator-line-horrizontal-medium-light3 margin-25px-bottom"></div>
+                                                        <span class="font-weight-600 letter-spacing-1 alt-font text-white text-uppercase margin-5px-bottom display-block">Herbal Beauty Salon</span>
+                                                        <p class="text-medium-gray text-uppercase text-extra-small no-margin-bottom">Branding and Identity</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -648,34 +805,18 @@
                             </li>
                             <!-- end portfolio item -->
                             <!-- start portfolio item -->
-                            <li class="grid-item advertising branding photography wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
-                                <a href="single-project-page-06.html">
-                                    <figure>
-                                        <div class="portfolio-img"><img src="http://placehold.it/800x650" alt=""/></div>
-                                        <figcaption>
-                                            <div class="portfolio-hover-main">
-                                                <div class="portfolio-hover-box vertical-align-middle">
-                                                    <div class="portfolio-icon alt-font font-weight-600 icon-medium text-deep-pink">+</div>
-                                                    <span class="text-medium alt-font text-extra-dark-gray margin-5px-bottom">Pixflow Studio</span>
-                                                    <p class="text-small no-letter-spacing text-medium-gray">Branding and Identity</p>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="grid-item web advertising design wow fadeInUp last-paragraph-no-margin">
+                            <li class="grid-item web branding design wow fadeInUp" data-wow-delay="0.2s">
                                 <a href="single-project-page-03.html">
                                     <figure>
-                                        <div class="portfolio-img"><img src="http://placehold.it/800x650" alt=""/></div>
+                                        <div class="portfolio-img bg-extra-dark-gray"><img src="http://placehold.it/800x650" alt=""/></div>
                                         <figcaption>
-                                            <div class="portfolio-hover-main">
+                                            <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box vertical-align-middle">
-                                                    <div class="portfolio-icon alt-font font-weight-600 icon-medium text-deep-pink">+</div>
-                                                    <span class="text-medium alt-font text-extra-dark-gray margin-5px-bottom">Designblast Inc</span>
-                                                    <p class="text-small no-letter-spacing text-medium-gray">Web and Photography</p>
+                                                    <div class="portfolio-hover-content position-relative">
+                                                        <div class="bg-deep-pink center-col separator-line-horrizontal-medium-light3 margin-25px-bottom"></div>
+                                                        <span class="font-weight-600 letter-spacing-1 alt-font text-white text-uppercase margin-5px-bottom display-block">Tailoring Interior</span>
+                                                        <p class="text-medium-gray text-uppercase text-extra-small no-margin-bottom">Branding and Brochure</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -684,34 +825,18 @@
                             </li>
                             <!-- end portfolio item -->
                             <!-- start portfolio item -->
-                            <li class="grid-item web branding design wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
+                            <li class="grid-item advertising branding photography wow fadeInUp wow fadeInUp" data-wow-delay="0.4s">
                                 <a href="single-project-page-04.html">
                                     <figure>
-                                        <div class="portfolio-img"><img src="http://placehold.it/800x650" alt=""/></div>
+                                        <div class="portfolio-img bg-extra-dark-gray"><img src="http://placehold.it/800x650" alt=""/></div>
                                         <figcaption>
-                                            <div class="portfolio-hover-main">
+                                            <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box vertical-align-middle">
-                                                    <div class="portfolio-icon alt-font font-weight-600 icon-medium text-deep-pink">+</div>
-                                                    <span class="text-medium alt-font text-extra-dark-gray margin-5px-bottom">Harddot Stone</span>
-                                                    <p class="text-small no-letter-spacing text-medium-gray">Branding and Identity</p>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="grid-item web advertising branding design photography wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
-                                <a href="single-project-page-05.html">
-                                    <figure>
-                                        <div class="portfolio-img"><img src="http://placehold.it/800x650" alt=""/></div>
-                                        <figcaption>
-                                            <div class="portfolio-hover-main">
-                                                <div class="portfolio-hover-box vertical-align-middle">
-                                                    <div class="portfolio-icon alt-font font-weight-600 icon-medium text-deep-pink">+</div>
-                                                    <span class="text-medium alt-font text-extra-dark-gray margin-5px-bottom">Educamp School</span>
-                                                    <p class="text-small no-letter-spacing text-medium-gray">Branding and Identity</p>
+                                                    <div class="portfolio-hover-content position-relative">
+                                                        <div class="bg-deep-pink center-col separator-line-horrizontal-medium-light3 margin-25px-bottom"></div>
+                                                        <span class="font-weight-600 letter-spacing-1 alt-font text-white text-uppercase margin-5px-bottom display-block">Pixflow Studio</span>
+                                                        <p class="text-medium-gray text-uppercase text-extra-small no-margin-bottom">Branding and Identity</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -724,192 +849,49 @@
                 </div>
             </div>
         </section>
-        <!-- end portfolio section -->
-        <!-- start counter section -->
-        <section class="wow fadeIn md-no-background-img" style="background: url('images/back-image3.png') right center no-repeat">
-            <div class="container">
+        <!-- end product post section -->
+        <!-- start blog navigation bar section -->
+        <section class="wow fadeIn border-top border-width-1 border-color-medium-gray no-padding">
+            <div class="container-fluid">
                 <div class="row">
-                    <!-- start counter item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 xs-margin-30px-bottom text-center wow zoomIn">
-                        <h5 class="text-white no-margin timer alt-font" data-speed="2000" data-to="650">350</h5>
-                        <span class="text-extra-small text-uppercase text-white display-block margin-three-bottom sm-margin-15px-bottom">Happy Clients</span>
-                        <div class="separator-line-verticle-large bg-transparent-white display-inline-block"></div>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 xs-margin-30px-bottom text-center wow zoomIn" data-wow-delay="0.2s">
-                        <h5 class="text-white no-margin timer alt-font" data-speed="2000" data-to="987">1500</h5>
-                        <span class="text-extra-small text-uppercase text-white display-block margin-three-bottom sm-margin-15px-bottom">Photo Capture</span>
-                        <div class="separator-line-verticle-large bg-transparent-white display-inline-block"></div>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 xs-margin-30px-bottom text-center wow zoomIn" data-wow-delay="0.4s">
-                        <h5 class="text-white no-margin timer alt-font" data-speed="2000" data-to="350">875</h5>
-                        <span class="text-extra-small text-uppercase text-white display-block margin-three-bottom sm-margin-15px-bottom">Work Completed</span>
-                        <div class="separator-line-verticle-large bg-transparent-white display-inline-block"></div>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 text-center wow zoomIn" data-wow-delay="0.6s">
-                        <h5 class="text-white no-margin timer alt-font" data-speed="2000" data-to="850">984</h5>
-                        <span class="text-extra-small text-uppercase text-white display-block margin-three-bottom sm-margin-15px-bottom">Telephonic Talk</span>
-                        <div class="separator-line-verticle-large bg-transparent-white display-inline-block"></div>
-                    </div>
-                    <!-- end counter item -->
-                </div>
-            </div>
-        </section>
-        <!-- end counter section -->
-        <!-- start blog section -->
-        <section class="wow fadeIn animated color-code no-padding-top md-no-background-img xs-padding-50px-tb" data-color="4" style="background: url('images/back-image4.png') left bottom no-repeat">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-sm-10 col-xs-12 center-col text-center">
-                        <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">Recent Blogs</div>
-                    </div>
-                </div>
-                <div class="row equalize xs-equalize-auto">
-                    <!-- start blog post item -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-15px-bottom wow fadeIn">
-                        <div class="blog-post blog-post-style6 border-all border-white-light padding-fourteen-all md-padding-ten-all xs-padding-30px-all inner-match-height">
-                            <div class="post-details">
-                                <span class="text-extra-small text-white text-uppercase display-block margin-four-bottom sm-margin-two-bottom opacity7">25 March 2017</span>
-                                <span class="text-large alt-font margin-50px-bottom xs-margin-30px-bottom display-block inner-match-height"><a href="blog-post-layout-01.html" class="text-white">The only important thing about design is how it relates to people.</a></span>
-                                <div class="author padding-10px-top position-relative">
-                                    <span class="text-white text-uppercase text-extra-small">by <a href="blog-only-text.html" class="text-white">Jay Benjamin</a></span>
-                                </div>
+                    <div class="display-table width-100 padding-30px-lr sm-padding-15px-lr">
+                        <div class="width-45 text-left display-table-cell vertical-align-middle">
+                            <div class="blog-nav-link blog-nav-link-prev text-extra-dark-gray">
+                                <span class="text-medium-gray text-extra-small display-block text-uppercase xs-display-none">Previous Project</span>
+                                <a href="single-project-page-08.html">
+                                    <i class="ti-arrow-left blog-nav-icon"></i>
+                                    Spice Blends
+                                </a>
+                            </div>
+                        </div>
+                        <div class="width-10 text-center display-table-cell vertical-align-middle">
+                            <a href="portfolio-boxed-grid-overlay.html" class="blog-nav-link blog-nav-home"><i class="ti-layout-grid2-alt"></i></a>
+                        </div>
+                        <div class="width-45 text-right display-table-cell vertical-align-middle">
+                            <div class="blog-nav-link blog-nav-link-next text-extra-dark-gray">    
+                                <span class="text-medium-gray text-extra-small display-block text-uppercase xs-display-none">Next Project</span>
+                                <a href="single-project-page-02.html">
+                                    <i class="ti-arrow-right blog-nav-icon"></i>
+                                    Filamento Lamps
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!-- start blog post item -->
-                    <!-- end blog post item -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-15px-bottom fadeIn" data-wow-delay="0.2s">
-                        <!-- fresh news item -->
-                        <div class="blog-post blog-post-style6 border-all border-white-light padding-fourteen-all md-padding-ten-all xs-padding-30px-all inner-match-height">
-                            <div class="post-details">
-                                <span class="text-extra-small text-white text-uppercase display-block margin-four-bottom sm-margin-two-bottom opacity7">20 March 2017</span>
-                                <span class="text-large alt-font margin-50px-bottom xs-margin-30px-bottom display-block  inner-match-height"><a href="blog-post-layout-02.html" class="text-white">Do good work for good people. Good design is a language, not a style.</a></span>
-                                <div class="author padding-10px-top position-relative">
-                                    <span class="text-white text-uppercase text-extra-small">by <a href="blog-only-text.html" class="text-white">Herman Miller</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- start blog post item -->
-                    <!-- end blog post item -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 fadeIn" data-wow-delay="0.4s">
-                        <div class="blog-post blog-post-style6 border-all border-white-light padding-fourteen-all md-padding-ten-all xs-padding-30px-all inner-match-height">
-                            <div class="post-details">
-                                <span class="text-extra-small text-white text-uppercase display-block margin-four-bottom sm-margin-two-bottom opacity7">15 March 2017</span>
-                                <span class="text-large alt-font margin-50px-bottom xs-margin-30px-bottom display-block inner-match-height"><a href="blog-post-layout-03.html" class="text-white">Leopard is an animal design, and my designs come from nature.</a></span>
-                                <div class="author padding-10px-top position-relative">
-                                    <span class="text-white text-uppercase text-extra-small">by <a href="blog-only-text.html" class="text-white">Hugh Macleod</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- start blog post item -->
                 </div>
             </div>
         </section>
-        <!-- end blog section -->
-        <!-- start clients logo section  -->
-        <section class="color-code no-padding-tb xs-padding-50px-tb" data-color="5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-sm-10 col-xs-12 center-col text-center">
-                        <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">Our Clients</div>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <!-- start client logo item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 margin-three-bottom xs-margin-15px-bottom wow fadeInDown">
-                        <a href="https://envato.com" target="_blank"><img src="images/logo-9.png" alt=""></a>
-                    </div>
-                    <!-- end client logo item -->
-                    <!-- start client logo item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 margin-three-bottom xs-margin-15px-bottom wow fadeInDown" data-wow-delay="0.2s">
-                        <a href="https://woocommerce.com" target="_blank"><img src="images/logo-10.png" alt=""></a>
-                    </div>
-                    <!-- end client logo item -->
-                    <!-- start client logo item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 margin-three-bottom xs-margin-15px-bottom wow fadeInDown" data-wow-delay="0.4s">
-                        <a href="https://magento.com" target="_blank"><img src="images/logo-11.png" alt=""></a>
-                    </div>
-                    <!-- end client logo item -->
-                    <!-- start client logo item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 margin-three-bottom xs-margin-15px-bottom wow fadeInDown" data-wow-delay="0.6s">
-                        <a href="https://lesscss.org" target="_blank"><img src="images/logo-12.png" alt=""></a>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 xs-margin-15px-bottom wow fadeInDown" data-wow-delay="0.8s">
-                        <a href="https://www.pingdom.com" target="_blank"><img src="images/logo-13.png" alt=""></a>
-                    </div>
-                    <!-- end client logo item -->
-                    <!-- start client logo item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 xs-margin-15px-bottom wow fadeInDown" data-wow-delay="1s">
-                        <a href="www.wordpress.com" target="_blank"><img src="images/logo-14.png" alt=""></a>
-                    </div>
-                    <!-- end client logo item -->
-                    <!-- start client logo item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 xs-margin-15px-bottom wow fadeInDown" data-wow-delay="1.2s">
-                        <a href="https://jquery.com/" target="_blank"><img src="images/logo-15.png" alt=""></a>
-                    </div>
-                    <!-- end client logo item -->
-                    <!-- start client logo item -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 wow fadeInDown" data-wow-delay="1.4s">
-                        <a href="https://google.com/" target="_blank"><img src="images/logo-16.png" alt=""></a>
-                    </div>
-                    <!-- end client logo item -->
-                </div>
-            </div>
-        </section>
-        <!-- end client logo section -->
-        <!-- start contact section -->
-        <section class="wow fadeIn animated color-code md-no-background-img" data-color="6" style="background: url('images/back-image5.png') left 51% no-repeat,url('images/back-image6.png') right top no-repeat">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-sm-10 col-xs-12 center-col text-center wow fadeIn">
-                        <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">Fill out the form and we'll be in touch soon!</div>
-                    </div>
-                </div>
-                <form id="contact-form" action="javascript:void(0)" method="post">
-                    <div class="row">
-                        <div class="col-md-8 center-col input-border-white text-center">
-                            <div id="success-contact-form" class="no-margin-lr"></div>
-                            <input type="text" name="name" id="name" placeholder="Name*" class="input-border-bottom border-white-light">
-                            <input type="text" name="email" id="email" placeholder="E-mail*" class="input-border-bottom border-white-light">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" class="input-border-bottom border-white-light">
-                            <textarea name="comment" id="comment" placeholder="Your Message" class="input-border-bottom border-white-light"></textarea>
-                            <button id="contact-us-button" type="submit" class="btn btn-very-small btn-transparent-white xs-margin-15px-top">send message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <!-- end contact section -->
-        <!-- start footer -->
-        <footer class="footer-center-logo padding-five-tb xs-padding-30px-tb">
-            <div class="container">
-                <div class="row equalize xs-equalize-auto">
-                    <!-- start copyright -->
-                    <div class="col-md-4 col-sm-5 col-xs-12 text-small text-center alt-font display-table xs-text-center xs-margin-15px-bottom">
-                        <div class="display-table-cell vertical-align-middle text-white">
-                            &COPY; 2017 Spaceboat is Powered by <a class="text-white" href="http://www.themezaa.com" target="_blank">ThemeZaa</a>.
-                        </div>
-                    </div>
-                    <!-- end copyright -->
-                    <!-- start logo -->
-                    <div class="col-md-4 col-sm-2 col-xs-12 text-center display-table xs-margin-10px-bottom">
-                        <div class="display-table-cell vertical-align-middle">
-                            <a href="index.html"><img class="footer-logo" src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- end logo -->
-                    <!-- start social media -->
-                    <div class="col-md-4 col-sm-5 col-xs-12 text-center display-table xs-text-center">
-                        <div class="display-table-cell vertical-align-middle text-white">
-                            <span class="alt-font text-small margin-20px-right">On social networks</span>
+        <!-- end blog navigation bar section -->
+        <!-- start footer --> 
+        <footer class="footer-standard-dark bg-extra-dark-gray"> 
+            <div class="footer-widget-area padding-five-tb xs-padding-30px-tb">
+                <div class="container">
+                    <div class="row equalize xs-equalize-auto">
+                        <div class="col-md-3 col-sm-6 col-xs-12 widget border-right border-color-medium-dark-gray sm-no-border-right sm-margin-30px-bottom xs-text-center">
+                            <!-- start logo -->
+                            <a href="index.html" class="margin-20px-bottom display-inline-block"><img class="footer-logo" src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo"></a>
+                            <!-- end logo -->
+                            <p class="text-small width-95 xs-width-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <!-- start social media -->
                             <div class="social-icon-style-8 display-inline-block vertical-align-middle">
                                 <ul class="small-icon no-margin-bottom">
                                     <li><a class="facebook text-white" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -918,9 +900,51 @@
                                     <li><a class="instagram text-white" href="https://instagram.com/" target="_blank"><i class="fa fa-instagram no-margin-right" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
+                            <!-- end social media -->
                         </div>
+                        <!-- start additional links -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 widget border-right border-color-medium-dark-gray padding-45px-left sm-padding-15px-left sm-no-border-right sm-margin-30px-bottom xs-text-center">
+                            <div class="widget-title alt-font text-small text-medium-gray text-uppercase margin-10px-bottom font-weight-600">Additional Links</div>
+                            <ul class="list-unstyled">
+                                <li><a class="text-small" href="index.html">Home Classic Corporate</a></li>
+                                <li><a class="text-small" href="home-creative-business.html">Home Creative Business</a></li>
+                                <li><a class="text-small" href="home-creative-designer.html">Home Creative Designer</a></li>
+                                <li><a class="text-small" href="home-portfolio-minimal.html">Home Portfolio Minimal</a></li>
+                                <li><a class="text-small" href="home-portfolio-parallax.html">Home Portfolio  parallax</a></li>
+                                <li><a class="text-small" href="home-portfolio-personal.html">Home Portfolio Personal</a></li>
+                            </ul>
+                        </div>
+                        <!-- end additional links -->
+                        <!-- start contact information -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 widget border-right border-color-medium-dark-gray padding-45px-left sm-padding-15px-left sm-clear-both sm-no-border-right  xs-margin-30px-bottom xs-text-center">
+                            <div class="widget-title alt-font text-small text-medium-gray text-uppercase margin-10px-bottom font-weight-600">Contact Info</div>
+                            <p class="text-small display-block margin-15px-bottom width-80 xs-center-col">POFO Design Agency<br> 301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
+                            <div class="text-small">Email: <a href="mailto:sales@domain.com">sales@domain.com</a></div>
+                            <div class="text-small">Phone: +44 (0) 123 456 7890</div>
+                            <a href="contact-us-modern.html" class="text-small text-uppercase text-decoration-underline">View Direction</a>
+                        </div>
+                        <!-- end contact information -->
+                        <!-- start instagram -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 widget padding-45px-left sm-padding-15px-left xs-text-center">
+                            <div class="widget-title alt-font text-small text-medium-gray text-uppercase margin-20px-bottom font-weight-600">Instagram portfolio</div>
+                            <div class="instagram-follow-api">
+                                <ul id="instaFeed-footer"></ul>
+                            </div>
+                        </div>
+                        <!-- end instagram -->
                     </div>
-                    <!-- end social media -->
+                </div>
+            </div>
+            <div class="bg-dark-footer padding-50px-tb text-center xs-padding-30px-tb">
+                <div class="container">
+                    <div class="row">
+                        <!-- start copyright -->
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-left text-small xs-text-center">&copy; 2017 POFO is Proudly Powered by <a href="http://www.themezaa.com" target="_blank" class="text-dark-gray">ThemeZaa</a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-right text-small xs-text-center">
+                            <a href="javascript:void(0);" class="text-dark-gray">Term and Condition</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" class="text-dark-gray">Privacy Policy</a>
+                        </div>
+                        <!-- end copyright -->
+                    </div>
                 </div>
             </div>
         </footer>
@@ -965,7 +989,7 @@
         <!-- equalize -->
         <script type="text/javascript" src="js/equalize.min.js"></script>
         <!-- skill bars  -->
-        <script type="text/javascript" src="js/skill.bars.jquery.js"></script>
+        <script type="text/javascript" src="js/skill.bars.jquery.js"></script> 
         <!-- justified gallery  -->
         <script type="text/javascript" src="js/justified-gallery.min.js"></script>
         <!--pie chart-->
