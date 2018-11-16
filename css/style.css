@@ -3940,6 +3940,7 @@ aside .latest-post li figure {width: 75px;}
 .container-fluid{
 	z-index: 1;
 	position: absolute;
+	top: 0;
   height:100%;
   display:table;
   width: 100%;
