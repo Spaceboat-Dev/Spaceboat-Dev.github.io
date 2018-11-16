@@ -3939,6 +3939,7 @@ aside .latest-post li figure {width: 75px;}
 
 .container-fluid-overlay {
 	z-index: 1;
+	padding: 15px;
 	position: absolute;
 	vertical-align: middle;
 	top: 0; right: 0; bottom: 0; left: 0;
