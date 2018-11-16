@@ -3937,14 +3937,18 @@ aside .latest-post li figure {width: 75px;}
   align-items: center;
 }
 
-.container-fluido{
+.container-fluidon{
 	z-index: 1;
 	position: absolute;
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
 	top: 0;
   height:100%;
-  display:table;
+	display: flex;
+  align-items: center;
   width: 100%;
   padding: 0;
+  justify-content: center;
 }
 
 .row-fluid {
