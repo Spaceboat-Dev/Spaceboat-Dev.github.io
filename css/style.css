@@ -3937,26 +3937,17 @@ aside .latest-post li figure {width: 75px;}
   align-items: center;
 }
 
-.container-fluido {
+.container-fluid-overlay {
 	z-index: 1;
 	position: absolute;
-	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh;
-	top: 0;
+	vertical-align: middle;
+	top: 0; right: 0; bottom: 0; left: 0;
   height:100%;
 	display: flex;
   align-items: center;
   width: 100%;
   padding: 0;
   justify-content: center;
-}
-
-.row-fluid {
-	height: 100%;
-	display:table-cell;
-	vertical-align: middle;
-	position: absolute;
-	z-index: 0;
 }
 
 .centering {
