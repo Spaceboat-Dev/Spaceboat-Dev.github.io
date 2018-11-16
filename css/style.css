@@ -3947,7 +3947,13 @@ aside .latest-post li figure {width: 75px;}
   padding: 0;
 }
 
-.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+.row-fluid {
+	height: 100%;
+	display:table-cell;
+	vertical-align: middle;
+	position: absolute;
+	z-index: 0;
+}
 
 .centering {
   float:none;
