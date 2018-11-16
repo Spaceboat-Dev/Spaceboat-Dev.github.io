@@ -3920,7 +3920,6 @@ aside .latest-post li figure {width: 75px;}
 }
 .video-container video.fillWidth {
     width: 100%;
-		z-index:0;
 }
 .overlay-desc {
   background: rgba(0,0,0,0);
