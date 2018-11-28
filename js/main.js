@@ -1401,7 +1401,7 @@ $('a[href*="#"]')
         if (error) {
             $.ajax({
                 type: "POST",
-                url: "https://bwniplc7wf.execute-api.us-east-1.amazonaws.com/dev/sleepdoc-contact",//"email-templates/contact.php",
+                url: "https://k9fmsevcff.execute-api.us-east-1.amazonaws.com/dev/sleepdoc-contact",//"email-templates/contact.php",
                 data: $("#contact-form").serialize(),
                 success: function (result) {
                     // Un-comment below code to redirect user to thank you page.
@@ -1450,6 +1450,64 @@ $('a[href*="#"]')
         });
         return error;
     }
+
+    //Project Contact us form
+    $('#project-contact-us-button').on("click", function () {
+        var error = ValidationProjectContactForm();
+        if (error) {
+            $.ajax({
+                type: "POST",
+                url: "https://k9fmsevcff.execute-api.us-east-1.amazonaws.com/dev/main-contact",//"email-templates/contact.php",
+                data: $("#project-contact-form").serialize(),
+                success: function (result) {
+                    // Un-comment below code to redirect user to thank you page.
+                    window.location.href="thank-you.html";
+
+                    $('input[type=text],textarea').each(function () {
+                        $(this).val('');
+                    })
+                    $("#success-contact-form").html("Your Email Has Sent!");
+                    $("#success-contact-form").fadeIn("slow");
+                    $('#success-contact-form').delay(4000).fadeOut("slow");
+                },
+                error: function (result) {
+
+                  window.location.href="thank-you.html";
+
+                  // $('input[type=text],textarea').each(function () {
+                  //     $(this).val('');
+                  // })
+                  // $("#success-contact-form").html("Your Email Has Sent!");
+                  // $("#success-contact-form").fadeIn("slow");
+                  // $('#success-contact-form').delay(4000).fadeOut("slow");
+                }
+            });
+        }
+    });
+    function ValidationProjectContactForm() {
+        var error = true;
+        $('#project-contact-form input[type=text]').each(function (index) {
+            if (index == 0) {
+                if ($(this).val() == null || $(this).val() == "") {
+                    $("#project-contact-form").find("input:eq(" + index + ")").addClass("required-error");
+                    error = false;
+                } else {
+                    $("#project-contact-form").find("input:eq(" + index + ")").removeClass("required-error");
+                }
+            } else if (index == 2) {
+                if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
+                    $("#project-contact-form").find("input:eq(" + index + ")").addClass("required-error");
+                    error = false;
+                } else {
+                    $("#project-contact-form").find("input:eq(" + index + ")").removeClass("required-error");
+                }
+            }
+
+        });
+        return error;
+    }
+
+
 
     //Contact us form 2
 
@@ -1536,62 +1594,6 @@ $('a[href*="#"]')
                     error = false;
                 } else {
                     $("#contact-form-3").find("input:eq(" + index + ")").removeClass("required-error");
-                }
-            }
-
-        });
-        return error;
-    }
-
-    //Project Contact us form
-    $('#project-contact-us-button').on("click", function () {
-        var error = ValidationProjectContactForm();
-        if (error) {
-            $.ajax({
-                type: "POST",
-                url: "https://bwniplc7wf.execute-api.us-east-1.amazonaws.com/dev/main-contact",//"email-templates/contact.php",
-                data: $("#contact-form").serialize(),
-                success: function (result) {
-                    // Un-comment below code to redirect user to thank you page.
-                    window.location.href="thank-you.html";
-
-                    $('input[type=text],textarea').each(function () {
-                        $(this).val('');
-                    })
-                    $("#success-contact-form").html("Your Email Has Sent!");
-                    $("#success-contact-form").fadeIn("slow");
-                    $('#success-contact-form').delay(4000).fadeOut("slow");
-                },
-                error: function (result) {
-
-                  window.location.href="thank-you.html";
-
-                  // $('input[type=text],textarea').each(function () {
-                  //     $(this).val('');
-                  // })
-                  // $("#success-contact-form").html("Your Email Has Sent!");
-                  // $("#success-contact-form").fadeIn("slow");
-                  // $('#success-contact-form').delay(4000).fadeOut("slow");
-                }
-            });
-        }
-    });
-    function ValidationProjectContactForm() {
-        var error = true;
-        $('#project-contact-form input[type=text]').each(function (index) {
-            if (index == 0) {
-                if ($(this).val() == null || $(this).val() == "") {
-                    $("#project-contact-form").find("input:eq(" + index + ")").addClass("required-error");
-                    error = false;
-                } else {
-                    $("#project-contact-form").find("input:eq(" + index + ")").removeClass("required-error");
-                }
-            } else if (index == 2) {
-                if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
-                    $("#project-contact-form").find("input:eq(" + index + ")").addClass("required-error");
-                    error = false;
-                } else {
-                    $("#project-contact-form").find("input:eq(" + index + ")").removeClass("required-error");
                 }
             }
 
