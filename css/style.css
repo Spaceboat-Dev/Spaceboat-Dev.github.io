@@ -124,6 +124,10 @@ body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="center_mask
     transform: translateX(-100%) translateZ(0);
 }
 
+#hidden-box {
+	opacity: 0.0;
+}
+
 /* ===================================
     Reset
 ====================================== */
@@ -3526,6 +3530,10 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 .toggles .panel-heading i {font-size: 12px; color: #626262}
 .toggles .panel + .panel { margin-top: -1px;}
 .toggles .panel-body {padding: 25px}
+
+.hidden-box {
+	opacity = 0.0
+}
 
 /* tab */
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover { border: 0; border-bottom: 1px solid;}

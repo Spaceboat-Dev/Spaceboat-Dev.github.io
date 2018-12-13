@@ -1454,7 +1454,7 @@ $('a[href*="#"]')
     //Project Contact us form
     $('#project-contact-us-button').on("click", function () {
         var error = ValidationProjectContactForm();
-        if (error) {
+        if (!error) {
             $.ajax({
                 type: "POST",
                 url: "https://k9fmsevcff.execute-api.us-east-1.amazonaws.com/dev/main-contact",//"email-templates/contact.php",
@@ -1485,24 +1485,33 @@ $('a[href*="#"]')
         }
     });
     function ValidationProjectContactForm() {
-        var error = true;
+        var error = false;
         $('#project-contact-form input[type=text]').each(function (index) {
             if (index == 0) {
                 if ($(this).val() == null || $(this).val() == "") {
                     $("#project-contact-form").find("input:eq(" + index + ")").addClass("required-error");
-                    error = false;
+                    error = true;
                 } else {
                     $("#project-contact-form").find("input:eq(" + index + ")").removeClass("required-error");
                 }
             } else if (index == 2) {
                 if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
                     $("#project-contact-form").find("input:eq(" + index + ")").addClass("required-error");
-                    error = false;
+                    error = true;
                 } else {
                     $("#project-contact-form").find("input:eq(" + index + ")").removeClass("required-error");
                 }
             }
-
+        });
+        $('#project-contact-form input[type=checkbox]').each(function (index) {
+          if (index == 0) {
+            if ($(this).is(':checked')) {
+              $("#project-contact-form").find("input:eq(" + index + ")").addClass("required-error");
+                 error = true;
+            } else {
+              $("#project-contact-form").find("input:eq(" + index + ")").removeClass("required-error");
+            }
+          }
         });
         return error;
     }
