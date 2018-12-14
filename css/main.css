@@ -240,3 +240,9 @@ h4 {
 .twitter-share-button, .twitter-follow-button {
 	vertical-align:middle;
 }
+
+.btn {display:inline-block; border:2px solid transparent; letter-spacing: .5px; line-height: inherit; border-radius: 0; text-transform: uppercase; width: auto; font-family: 'Didact Gothic', sans-serif; font-weight: 600; transition-duration: 0.3s; transition-timing-function: ease-in-out}
+.btn.btn-bluegreen {background:#4BC4CB; border-color: #4BC4CB; color: #232323}
+.btn.btn-rounded {border-radius: 50px}
+.btn.btn-medium {font-size:12px; padding: 6px 25px 5px;}
+.btn-dual .btn {margin: 0 10px; }
